@@ -2,41 +2,33 @@
 
 <html>
   <head>
-    <link rel="stylesheet" href="practice.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Lato:700,900|Noto+Sans+JP:400,700&display=swap&subset=japanese" rel="stylesheet">
 
-    <title>れんしう</title>
-
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script type="module" src="./index.js"></script>
-    <script type="module" src="./contact/contact.js"></script>
-    <script type="module" src="./contact/contact_button.js"></script>
-<!--<script type="module" src="node_modules/react/cjs/react.development.js"></script>-->
+    <title>Zassö.</title>
 
   </head>
 
   <body>
-      
-     <!--ここから本編-->
 
-     <!--ヘッダー-->
+    <!--ヘッダー-->
     <header>
         <div class="header-wrap">
 
             <div class="header-logo btn">
-                <h3><a class="no_underline" href="#top">MilkTea., inc</a></h3>
+                <h3><a class="no_underline" href="#top">Zassö.</a></h3>
             </div>
 
             <div class="header-contents">
             
                 <div class="header-content btn">
-                    <a class="no_underline" href="#service">service</a>
+                    <a class="no_underline" href="#service">Service</a>
                 </div>
         
                 <div class="header-content btn">
-                    <a class="no_underline" href="#job">job</a>
+                    <a class="no_underline" href="#team">Team</a>
                 </div>
         
                 <div class="header-content btn">
@@ -48,21 +40,23 @@
                 </div>
         
             </div>
-
         </div>
     </header>
 
-     <!--トップ　タイトルのとこ-->
-    
+     <!--トップ　タイトルのロゴ-->
      <div id="top" class="top">
         <div class="top-wrap">
+            <div class="top-space"></div>
             <div class="logo">
-                <h3>MilkTea., inc</h3>
+                <h3>Zassö.</h3>
+            </div>
+            <div top-belowmessage>
+                <div id="top-randomMessage"></div>
             </div>
         </div>
     </div>
-    
-     <!--メイン-->
+
+    <!--メインコンテンツども-->
     <div class="main">
 
         <div class="main-wrap">
@@ -74,13 +68,15 @@
                     
                 <div class="article-contents service-contents">
                     <div class="service-article article-content">
-                        <h3>題名</h3>
+                        <h3>Mokkan</h3>
                         <p>
-                            ないよう1、ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+                            文章投稿サービスです。<br>
+                            投稿や閲覧は自由に、コメントは月額サブスクリプション式です。<br>
+                            コメント数に応じて収益を還元します。
                             <br>
                         </p>
                         <div class="service-url">
-                            <a href="#!" class="no_underline">milk_tea_web_application/practice.html</a>
+                            <a href="#!" class="no_underline">Mokkan.ink</a>
                         </div>
                     </div>
                     <div class="service-image article-content">
@@ -92,13 +88,27 @@
             </div>
 
 
-            <div id="job">
+            <div id="team">
                 <div class="article-title">
-                    <h3>Job</h3>
+                    <h3>Team</h3>
                 </div>
 
                 <div class="article-contents">
-                    <p>　　　ないよう2</p>
+                    <div class="team-list">
+                        <div class="team-menber">
+                            <h3>H.I</h3>
+                            <p>がんばる。事業老人卍</p>
+                        </div>
+                        <div class="team-menber">
+                            <h3>Y.O</h3>
+                            <p>ものしり。なんでもやる。</p>
+                        </div>
+                        <div class="team-menber">
+                            <h3>K.H</h3>
+                            <p>東大生。頭がいい。勉強家。</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -133,6 +143,10 @@
 
     </div>
 
+    <div id="company">
+        <div class="company-wrap"></div>
+    </div>
+
     <div id="contact">
         <div class="contact-wrap">
             <div class="article-title contact-title">
@@ -141,19 +155,14 @@
 
             <div class="article-contents contact-contents">
                 <div class="contact-content">
-                    <p class="contact-sentence">文言Reactを使いたい</p>
-                    
+                    <p >お仲間募集中&nbsp;&nbsp;&nbsp;&nbsp;📧 .. 📬 .. 🐐🐐🐐</p>
+                    <a href="mailto:zasssoou@gmail.com?subject=お問い合わせ&body=お問い合わせ内容をここに記入してください。" 
+                    class="contact-mail no_underline">zasssoou@gmail.com</a>   
                 </div>
-                <div class="contact-content">
-                    <div id="contact_button_container">
-
-                    </div>
-                    <a href="#!" class="contact-btn contact-opacity　btn no_underline">contact</a>
-                    <div id="root"></div>
-                    <script type="module" src="./index.js"></script>
-                    </div>
+ 
+                <a href="https://forms.gle/qZVN3oYJCZu8dUtC8" target="_blank" 
+                class="contact-btn contact-opacity btn no_underline">contact</a>
             </div>
-
         </div>
     </div>
 
@@ -161,15 +170,28 @@
     <footer>
         <div class="footer-wrap">
             <div class="footer-contents">
-                <p><span class="footer-s">Made by </span>MilkTea.</p>
+                <p><span class="footer-s">Made by </span>Zassö.</p>
             </div>
         </div>
     </footer>
-
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
    
   </body>
+
+  <script>
+    // メッセージのリスト
+    var messages = [
+        "くさのねかつどうをしています...",
+        "つながりをつくりましょう.",
+        "きづく、はぐくむ🌱",
+    ];
+
+    // ランダムなインデックスを選ぶ
+    var randomIndex = Math.floor(Math.random() * messages.length);
+
+    // メッセージを表示
+    document.getElementById("top-randomMessage").textContent = messages[randomIndex];
+    </script>
+
 </html>
 
 
